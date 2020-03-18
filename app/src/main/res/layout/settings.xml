@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Profile Setup"
+        android:id="@+id/textView7"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:gravity="center"
+        android:ems="10"
+        android:id="@+id/nametag"
+        android:hint="Name"
+        android:textColor="#B6D4F6"
+        android:background="@drawable/apptheme_textfield_focused_holo_light"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:gravity="center"
+        android:ems="10"
+        android:id="@+id/workat"
+        android:hint="Class"
+        android:textColor="#B6D4F6"
+        android:background="@drawable/apptheme_textfield_focused_holo_light"
+        android:layout_below="@+id/nametag"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+
+        android:text="UPDATE"
+        android:id="@+id/update"
+        android:textColor="#ffffff"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="150sp"
+        android:layout_height="40sp"
+        android:background="@drawable/backbut"
+        android:layout_below="@+id/workat"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/rollno"
+        android:background="@drawable/apptheme_textfield_focused_holo_light"
+        android:gravity="center"
+        android:textColor="#B6D4F6"
+        android:hint="Roll No/ID"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+
+        android:text="UPDATE"
+        android:id="@+id/rolbut"
+        android:textColor="#ffffff"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="150sp"
+        android:layout_height="40sp"
+        android:background="@drawable/backbut"
+        android:layout_below="@+id/rollno"
+        android:layout_alignLeft="@+id/update"
+        android:layout_alignStart="@+id/update" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="User Rollno/ID"
+        android:gravity="center"
+        android:id="@+id/textView5"
+
+        android:layout_gravity="center_horizontal"
+        android:textColor="#000000"
+        android:layout_marginTop="111dp"
+        android:layout_below="@+id/update"
+        android:layout_alignRight="@+id/textView7"
+        android:layout_alignEnd="@+id/textView7" />
+
+</RelativeLayout>
